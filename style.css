@@ -1,0 +1,190 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 1000px;
+  height: 100vh;
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* justify-content: center; */
+  /* align-items: center;
+  justify-content: center; */
+  /* z-index: -2; */
+}
+
+.mapcontainer {
+  display: flex;
+}
+
+.playerarea {
+  width: 400px;
+  height: 400px;
+  margin: 40px;
+  background-color: blue;
+  /* z-index: -2; */
+}
+
+.pcarea {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  margin: 40px;
+  /* z-index: -2; */
+}
+
+.cell {
+  width: 38px;
+  height: 38px;
+  border: 1px solid white;
+}
+
+.row {
+  display: flex;
+}
+/* 
+.ships {
+  margin-top: 5px;
+} */
+
+#carrier {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  background-color: grey;
+  border-left: 3px solid red;
+}
+
+.battleship {
+  width: 160px;
+  height: 40px;
+  background-color: grey;
+  border-left: 3px solid orange;
+}
+
+.cruiser {
+  width: 120px;
+  height: 40px;
+  background-color: grey;
+  border-left: 3px solid green;
+}
+
+.submarine {
+  width: 120px;
+  height: 40px;
+  background-color: grey;
+  border-left: 3px solid greenyellow;
+}
+
+.destroyer {
+  width: 80px;
+  height: 40px;
+  background-color: grey;
+  border-left: 3px solid purple;
+}
+
+.select {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  /* border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; */
+  background-color: orange;
+  cursor: move;
+}
+
+#rotate {
+  padding: 15px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+#rotate:hover {
+  background-color: black;
+}
+
+.grey {
+  background-color: grey !important;
+}
+
+.region {
+  background-color: yellow !important;
+}
+
+#start,
+#again {
+  display: block !important;
+  width: 150px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.8s;
+}
+
+#start:hover,
+#again:hover {
+  background-color: black;
+}
+
+h1 {
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.pcarea .cell {
+  cursor: pointer;
+}
+
+.hit {
+  background-color: red;
+}
+
+.miss {
+  background-color: aqua;
+}
+
+#left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 60px;
+  padding: 5px;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+#right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 60px;
+  padding: 5px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
